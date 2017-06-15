@@ -1,5 +1,11 @@
 # LedMatrixMaker16X
 Un simple système de création interactive de matrice led 16x16
+Comment utiliser
+================
+
+Ouvrez le fichier index.html dans votre navigateur selectionner une couleur et il ne reste plus qu'a cliquer sur la matrice pour changer la couleur du pixel. Pour exporter la chaine générée il suffi decopier et coller la chaine qui se met a jour sous la matrice..
+
+C'est bidon pour le moment mais ca vas vite évoluer....
 
 Quelques mots
 =============
