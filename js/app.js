@@ -1,4 +1,25 @@
 $(document).ready(function() {
+    var matrixId = 0;
+    var colorAsClass = [
+        "cblack",
+        "cblanche",
+        "crouge",
+        "cvert",
+        "cbleu",
+        "cturc",
+        "cviolet",
+        "cjaune"
+    ];
+    var classAsColor = {
+        "cblack":0,
+        "cblanche":1,
+        "crouge":2,
+        "cvert":3,
+        "cbleu":4,
+        "cturc":5,
+        "cviolet":6,
+        "cjaune":7
+    };
     generatebinary();
     new Clipboard('#copy-button');
     var colorCurent = 0;
@@ -108,8 +129,40 @@ $(document).ready(function() {
     
     $('.btnSave').click(function(e){
         e.preventDefault();
-        var chaineString = $('.codeMatrice').html();
+        var chaineString = $('.codeMatriceAll').html();
         var blob = new Blob([chaineString], {type: "text/plain;charset=utf-8"});
         saveAs(blob, "Matrix.txt");
     });
+    $('.miniMatrix').click(function(e){
+        e.preventDefault();
+        matrixId = $(this).data().matrixid;
+        $('.miniMatrix').removeClass('selectedMiniMatrix');
+        $(this).addClass('selectedMiniMatrix');
+    });
+    $('.btnSaveOnScreen').click(function(e){
+        e.preventDefault();
+        var i = false;
+        textePresent="";
+        var chaineString = $('.codeMatrice').html();
+        $('.miniMatrix-num'+matrixId).find('.cMiniBlock').each(function(n,e){
+            c = $(e).attr('class');
+            $(e).removeClass(c).addClass('cMiniBlock').addClass(colorAsClass[chaineString[n]]);
+        });
+        
+        $('.miniMatrix').each(function(num,elema){
+            
+            if(i){
+                textePresent = textePresent+"|";
+            }
+            i = true;
+            $(elema).find('.cMiniBlock').each(function(nombre,elemb){
+                textePresent = textePresent+classAsColor[$(elemb).attr('class').replace('cMiniBlock','').replace(' ','')];
+            });
+            
+        });
+        $('#binaryCodeAll').html("");
+        $('#binaryCodeAll').html(textePresent);
+    });
+    
+    
 });
