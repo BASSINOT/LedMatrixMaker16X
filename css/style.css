@@ -18,14 +18,14 @@ body{display: block;margin: 0 auto}
 .cviolet{background: #ff00ff;color: #ff00ff}
 .cjaune{background: #ffff00;color: #ffff00}
 .csspencil{display: inline-block; width: 50px;height: 50px}
-.colorButtonBlack{background: url("imgs/pencil.png") top left #000000!important}
-.colorButtonBlanc{background: url("imgs/pencil.png") top left #fff!important}
-.colorButtonRouge{background: url("imgs/pencil.png") top left #ff0000!important}
-.colorButtonVert{background: url("imgs/pencil.png") top left #00ff00!important}
-.colorButtonBleu{background: url("imgs/pencil.png") top left #0000ff!important}
-.colorButtonViolet{background: url("imgs/pencil.png") top left #ff00ff!important}
-.colorButtonTurc{background: url("imgs/pencil.png") top left #00ffff!important}
-.colorButtonJaune{background: url("imgs/pencil.png") top left #ffff00!important}
+.colorButtonBlack{background: url("../imgs/pencil.png") top left #000000!important}
+.colorButtonBlanc{background: url("../imgs/pencil.png") top left #fff!important}
+.colorButtonRouge{background: url("../imgs/pencil.png") top left #ff0000!important}
+.colorButtonVert{background: url("../imgs/pencil.png") top left #00ff00!important}
+.colorButtonBleu{background: url("../imgs/pencil.png") top left #0000ff!important}
+.colorButtonViolet{background: url("../imgs/pencil.png") top left #ff00ff!important}
+.colorButtonTurc{background: url("../imgs/pencil.png") top left #00ffff!important}
+.colorButtonJaune{background: url("../imgs/pencil.png") top left #ffff00!important}
 .pencilsArea{display: block; text-align: center;margin: 20px}
 .checkedPencil{border-bottom: solid 2px #000}
 h1{display: block; text-align: center;margin: 10px; font-size: 40px}
