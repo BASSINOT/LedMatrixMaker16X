@@ -11,20 +11,8 @@
         <link rel="stylesheet" href="css/style.css"/>
     </head>
     <body>
-        <h1>LED MATRIX GENERATOR</h1>
-        <div class="pencilsArea">
-            <a href="#" style="background : #000000; color:#fff" class="csspencil colorButtonBlack checkedPencil"></a>
-            <a href="#" class="csspencil colorButtonBlanc"></a>
-            <a href="#" class="csspencil colorButtonRouge"></a>
-            <a href="#" style="background : #00ff00" class="csspencil colorButtonVert"></a>
-            <a href="#" style="background : #0000ff" class="csspencil colorButtonBleu"></a>
-            <a href="#" style="background : #ff00ff" class="csspencil colorButtonViolet"></a>
-            <a href="#" style="background : #00ffff" class="csspencil colorButtonTurc"></a>
-            <a href="#" style="background : #ffff00" class="csspencil colorButtonJaune"></a>
-        </div>
-        
-        
-        <div class="matrix">
+        <div class="container">
+            <div class="matrix">
             <div class="cell cblack">0</div><!--
          --><div class="cell cblack">0</div><!--
          --><div class="cell cblack">0</div><!--
@@ -299,293 +287,311 @@
 
 
         </div>
-        
-        <h1>Code de la matrice courante :</h1>
-        <p id="binaryCode" class="codeMatrice"></p>
-        <h1>Ecrans :</h1>
-        <input type="button" value="Sauvegarder dans l'écran selectionné" class="btnSaveOnScreen"/>
-        <input type="button" value="Ajouter un ecran" class="btnAddScreen"/>
-        <input type="button" value="Supprimer l'écran courant" class="btnDelScreen"/>
-        <div class="ScreenArea">
-            <div class="selectedMiniMatrix miniMatrix miniMatrix-num0" data-matrixid="0">
-                <div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div><!--
-             --><div class="cMiniBlock cblack"></div>
-            </div>
         </div>
-        <h1>Code de toutes les matrices :</h1>
-        <p id="binaryCodeAll" class="codeMatriceAll"></p>
+        <div class="sideBar">
+            <h1>Matrix Painter</h1>
+            <h2>Couleur</h2>
+            <div class="pencilsArea">
+                <a href="#" style="background : #000000; color:#fff" class="csspencil colorButtonBlack checkedPencil"></a>
+                <a href="#" class="csspencil colorButtonBlanc"></a>
+                <a href="#" class="csspencil colorButtonRouge"></a>
+                <a href="#" style="background : #00ff00" class="csspencil colorButtonVert"></a>
+                <a href="#" style="background : #0000ff" class="csspencil colorButtonBleu"></a>
+                <a href="#" style="background : #ff00ff" class="csspencil colorButtonViolet"></a>
+                <a href="#" style="background : #00ffff" class="csspencil colorButtonTurc"></a>
+                <a href="#" style="background : #ffff00" class="csspencil colorButtonJaune"></a>
+            </div>
+            <h2>Scene</h2>
+            <div class="ScreenArea">
+                <div class="selectedMiniMatrix miniMatrix miniMatrix-num0" data-matrixid="0">
+                    <div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div><!--
+                 --><div class="cMiniBlock cblack"></div>
+                </div>
+            </div>
+            <input type="button" value="" class="btnSaveOnScreen"/>
+            <input type="button" value="" class="btnAddScreen"/>
+            <input type="button" value="" class="btnDelScreen"/>
+            <p>Pour enregistrer votre scene, utilisez la disquette. Pour ajouter une nouvelle scenne, utiliser le plus. Pour supprimer la scene courante, utiliser la corbeille</p>
+            <h2>Exporter / Sauvegarder votre travail !</h2>
+            <input type="button" value="Sauvegarder votre travail" class="btnSave"/>
+            <h2>Importer / Charger une scene !</h2>
+            <input type="file" id="file" class="fileInput"/>
+            <input type="button" value="Charger les scenes" class="btnLoadScreen"/>
+            
+        </div>
         
         
-        <input type="button" value="Télécharger au format .txt" class="btnSave"/>
+        <p  style="display : none"  id="binaryCode" class="codeMatrice"></p>
+        <p  style="display : none"  id="binaryCodeAll" class="codeMatriceAll"></p>
         <script type="text/javascript">
             window.onload = function() {
                 var f = document.getElementById('file'),
@@ -609,10 +615,8 @@
             };
         </script>
 
-        <label for="file">Choisissez un fichier texte</label>
-        <input type="file" id="file" />
 
-        <pre id="resultat"></pre>
+        <pre style="display : none" id="resultat"></pre>
         <p class="foot">Retrouver ce projet sur <a href="https://github.com/BASSINOT/LedMatrixMaker16X">gitHub</a>.</p>
     </body>
 </html>

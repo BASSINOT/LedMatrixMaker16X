@@ -131,14 +131,14 @@ $(document).ready(function() {
         e.preventDefault();
         var chaineString = $('.codeMatriceAll').html();
         var blob = new Blob([chaineString], {type: "text/plain;charset=utf-8"});
-        saveAs(blob, "Matrix.txt");
+        saveAs(blob, "Matrix.mtx");
     });
     $('.miniMatrix').click(function(e){
         e.preventDefault();
         matrixId = $(this).data().matrixid;
         $('.miniMatrix').removeClass('selectedMiniMatrix');
         $(this).addClass('selectedMiniMatrix');
-        console.log(matrixId);
+        loadMatriceSingle();
     });
     $('.btnSaveOnScreen').click(function(e){
         e.preventDefault();
@@ -176,6 +176,7 @@ $(document).ready(function() {
             matrixId = $(this).data().matrixid;
             $('.miniMatrix').removeClass('selectedMiniMatrix');
             $('.miniMatrix-num' + matrixId).addClass('selectedMiniMatrix');
+                loadMatriceSingle();
         });
     });
     $('.btnDelScreen').click(function(e){
@@ -206,7 +207,56 @@ $(document).ready(function() {
         matrixId=0;
         $('.miniMatrix').removeClass('selectedMiniMatrix');
         $('.miniMatrix-num0').addClass('selectedMiniMatrix');
+        loadMatriceSingle();
+    });
+    
+    $('.btnLoadScreen').click(function(e){
+        e.preventDefault();
+        var myarray = $('#resultat').html().split("|");
+        $('.miniMatrix').remove();
+        for(i=0;i<myarray.length;i++){
+            curentNumPic = i;
+            
+            loadedDatas = "";
+            loadedDatas = loadedDatas + ('<div class="miniMatrix miniMatrix-num' + curentNumPic +'" data-matrixId="' + curentNumPic + '"><!--');
+            for(j=0;j<myarray[i].length;j++){
+                curentClass = myarray[i][j];
+                loadedDatas = loadedDatas + ('--><div class="cMiniBlock ' + colorAsClass[curentClass] + '"></div><!--');
+            }
+            loadedDatas = loadedDatas + ('--></div>');
+            $('.ScreenArea').append(loadedDatas);
+            
+            $('.miniMatrix-num' + curentNumPic).on('click',function(e){
+                e.preventDefault();
+                matrixId = $(this).data().matrixid;
+                $('.miniMatrix').removeClass('selectedMiniMatrix');
+                $('.miniMatrix-num' + matrixId).addClass('selectedMiniMatrix');
+                loadMatriceSingle();
+            });
+        }
         
     });
+    
+    function loadMatriceSingle(){
+        textePresent = "";
+        $('.miniMatrix-num' + matrixId).find('.cMiniBlock').each(function(nombre,elemb){
+            textePresent = textePresent+classAsColor[$(elemb).attr('class').replace('cMiniBlock','').replace(' ','')];
+        });
+        
+        $('.matrix').find('.cell').each(function(nombre,elm){
+            colorNm = textePresent[nombre];
+            $(elm).html(colorNm)
+            
+            c=$(elm).attr('class');
+            $(elm).removeClass(c);
+            $(elm).addClass('cell');
+            $(elm).addClass(colorAsClass[colorNm]);
+            
+        });
+        
+        
+        $('#binaryCode').html("");
+        $('#binaryCode').html(textePresent);
+    }
     
 });
