@@ -6,7 +6,7 @@ blockquote, q {	quotes: none;}
 blockquote:before, blockquote:after,q:before, q:after {	content: '';	content: none;}
 table {	border-collapse: collapse;	border-spacing: 0;}
 body{display: block;margin: 0 auto}
-.cell{display: inline-block; width: 40px; height: 40px; border: solid 1px #000;margin: 0;padding: 0;    border-collapse: collapse;line-height: 40px;text-align: center; vertical-align: top}
+.cell{display: inline-block; width: 40px; height: 40px; border: solid 1px #000;margin: 0;padding: 0;    border-collapse: collapse;line-height: 40px;text-align: center; vertical-align: top;cursor: pointer}
 .cell:hover{border: solid 1px #ff9300;}
 .matrix{margin: 0;padding: 0;display: block;    border-collapse: collapse;width: 672px; margin: 0px auto;border: solid 5px #777777; box-shadow: 0 0 50px #000}
 .cblack{background: #000000;color: #000000}
@@ -29,16 +29,17 @@ body{display: block;margin: 0 auto}
 .pencilsArea{display: block; text-align: center;margin: 20px;width: 500px}
 .checkedPencil{border-bottom: solid 2px #000}
 h1{display: block; text-align: center;margin: 10px; font-size: 40px}
+h2{display: block; text-align: center;margin: 10px; font-size: 15px; border-top: #000 1px solid; text-decoration: underline}
 .codeMatrice{display: block; width: 200px;margin: 20px auto;word-break: break-all}
 .btnSave{display: block;text-align: center;margin: 20px auto; }
-.foot{display: block;text-align: center;margin: 20px auto; }
 .cMiniBlock{display: inline-block; width: 5px; height: 5px; border: solid 1px #000;margin: 0;padding: 0;    border-collapse: collapse;line-height: 5px;text-align: center; vertical-align: top;white-space: normal}
 .miniMatrix{display: inline-block;width: 112px;line-height: 5px;white-space: normal;border: solid 5px #d1d1d1;transition-duration: 0.5s}
 .miniMatrix:hover{border: solid 5px #10f221}
 .selectedMiniMatrix{border: solid 5px #10f2d8}
 .ScreenArea{display: block;width: 500px;margin: 20px auto; overflow-x: auto;height: 140px; box-shadow: 0 0 20px;white-space: nowrap}
 
-
+.pageSecteur{display: block;width: 1290px;margin: 0 auto}
+.footer{display: block;width: 1290px;margin: 0 auto;text-align: center}
 .container{display: inline-block; width: 682px;padding: 40px;margin: 0;vertical-align: top;}
 .sideBar{display: inline-block;vertical-align: top;width: 500px}
 .btnSaveOnScreen{background: url('../imgs/save.png')top left no-repeat; border: none; width: 50px;height: 50px;cursor: pointer;display: inline-block;margin: 5px 20px}
