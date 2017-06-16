@@ -303,7 +303,33 @@
         <p id="binaryCode" class="codeMatrice"></p>
         
         <input type="button" value="Télécharger au format .txt" class="btnSave"/>
-        
+        <script type="text/javascript">
+            window.onload = function() {
+                var f = document.getElementById('file'),
+                    res = document.getElementById('resultat');
+                f.onchange = function() {
+                    var file = f.files[0],
+                        fr = new FileReader();
+                    fr.onprogress = function() {
+                        res.innerHTML = 'Chargement...';
+                    };
+                    fr.onerror = function() {
+                        res.innerHTML = 'Oups, une erreur s\'est produite...';
+                    };
+                    fr.onload = function() {
+                        res.innerHTML = '';
+                        res.appendChild(document.createTextNode(fr.result));
+                    };
+
+                    fr.readAsText(file);
+                };
+            };
+        </script>
+
+        <label for="file">Choisissez un fichier texte</label>
+        <input type="file" id="file" />
+
+        <pre id="resultat"></pre>
         <p class="foot">Retrouver ce projet sur <a href="https://github.com/BASSINOT/LedMatrixMaker16X">gitHub</a>.</p>
     </body>
 </html>
