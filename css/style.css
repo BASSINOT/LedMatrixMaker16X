@@ -1,0 +1,33 @@
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup,menu, nav, output, ruby, section, summary,time, mark, audio, video {margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;vertical-align: baseline;}
+article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
+body {line-height: 1;        font-family: arial;}
+ol, ul {	list-style: none;}
+blockquote, q {	quotes: none;}
+blockquote:before, blockquote:after,q:before, q:after {	content: '';	content: none;}
+table {	border-collapse: collapse;	border-spacing: 0;}
+body{display: block;margin: 0 auto}
+.cell{display: inline-block; width: 40px; height: 40px; border: solid 1px #000;margin: 0;padding: 0;    border-collapse: collapse;line-height: 40px;text-align: center; vertical-align: top}
+.cell:hover{border: solid 1px #ff9300;}
+.matrix{margin: 0;padding: 0;display: block;    border-collapse: collapse;width: 672px; margin: 40px auto;border: solid 5px #777777; box-shadow: 0 0 50px #000}
+.cblack{background: #000000;color: #000000}
+.crouge{background: #ff0000;color: #ff0000}
+.cvert{background: #00ff00;color: #00ff00}
+.cbleu{background: #0000ff;color: #0000ff}
+.cblanche{background: #fff;color: #ffffff}
+.cturc{background: #00ffff;color: #00ffff}
+.cviolet{background: #ff00ff;color: #ff00ff}
+.cjaune{background: #ffff00;color: #ffff00}
+.csspencil{display: inline-block; width: 50px;height: 50px}
+.colorButtonBlack{background: url("imgs/pencil.png") top left #000000!important}
+.colorButtonBlanc{background: url("imgs/pencil.png") top left #fff!important}
+.colorButtonRouge{background: url("imgs/pencil.png") top left #ff0000!important}
+.colorButtonVert{background: url("imgs/pencil.png") top left #00ff00!important}
+.colorButtonBleu{background: url("imgs/pencil.png") top left #0000ff!important}
+.colorButtonViolet{background: url("imgs/pencil.png") top left #ff00ff!important}
+.colorButtonTurc{background: url("imgs/pencil.png") top left #00ffff!important}
+.colorButtonJaune{background: url("imgs/pencil.png") top left #ffff00!important}
+.pencilsArea{display: block; text-align: center;margin: 20px}
+.checkedPencil{border-bottom: solid 2px #000}
+h1{display: block; text-align: center;margin: 10px; font-size: 40px}
+.codeMatrice{display: block; width: 200px;margin: 20px auto;word-break: break-all}
+.foot{display: block;text-align: center;margin: 20px auto; }
