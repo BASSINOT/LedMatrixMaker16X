@@ -105,4 +105,11 @@ $(document).ready(function() {
             $(this).addClass('cjaune');
         }
     });
+    
+    $('.btnSave').click(function(e){
+        e.preventDefault();
+        var chaineString = $('.codeMatrice').html();
+        var blob = new Blob([chaineString], {type: "text/plain;charset=utf-8"});
+        saveAs(blob, "Matrix.txt");
+    });
 });

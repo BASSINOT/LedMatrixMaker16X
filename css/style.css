@@ -30,4 +30,5 @@ body{display: block;margin: 0 auto}
 .checkedPencil{border-bottom: solid 2px #000}
 h1{display: block; text-align: center;margin: 10px; font-size: 40px}
 .codeMatrice{display: block; width: 200px;margin: 20px auto;word-break: break-all}
+.btnSave{display: block;text-align: center;margin: 20px auto; }
 .foot{display: block;text-align: center;margin: 20px auto; }
