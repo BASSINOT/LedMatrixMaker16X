@@ -32,3 +32,8 @@ h1{display: block; text-align: center;margin: 10px; font-size: 40px}
 .codeMatrice{display: block; width: 200px;margin: 20px auto;word-break: break-all}
 .btnSave{display: block;text-align: center;margin: 20px auto; }
 .foot{display: block;text-align: center;margin: 20px auto; }
+.cMiniBlock{display: inline-block; width: 5px; height: 5px; border: solid 1px #000;margin: 0;padding: 0;    border-collapse: collapse;line-height: 5px;text-align: center; vertical-align: top;white-space: normal}
+.miniMatrix{display: inline-block;width: 112px;line-height: 5px;white-space: normal;border: solid 5px #d1d1d1;transition-duration: 0.5s}
+.miniMatrix:hover{border: solid 5px #10f221}
+.selectedMiniMatrix{border: solid 5px #10f2d8}
+.ScreenArea{display: block;width: 600px;margin: 20px auto; overflow-x: auto;height: 140px; box-shadow: 0 0 20px;white-space: nowrap}
