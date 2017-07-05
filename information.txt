@@ -1,0 +1,7 @@
+Bonjour,
+
+Ce logiciel à été créer par xavier bassinot pour créer des matrices de led
+
+Il est open source alors distribuez le sans soucis
+
+le code source est ouvert sur github /BASSINOT
